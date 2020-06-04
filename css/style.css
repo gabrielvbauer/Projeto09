@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/*** CLASSES COMPLEMENTARES ***/
+
+.clear {
+    clear: both;
+}
+
+.container {
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+
+/******/
+
+
+/***** ESTILO SITE *****/
+
+
+/** HEADER **/
+
+section.header-mst {
+    width: 100%;
+    padding: 30px 0;
+    min-height: 700px;
+    background-image: url(../images/bg_01.png);
+    background-size: cover;
+}
+
+section.header-mst header {
+    border-bottom: 2px solid rgba(71, 83, 88, 0.2);
+    padding-bottom: 20px;
+}
+
+.all {
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    width: 166px;
+    height: 64px;
+    background-image: url(../images/logo.png);
+    background-size: 100% 100%;
+}
+
+header nav {
+    float: left;
+    padding-left: 60px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 0 10px;
+    font-size: 16px;
+    color: white;
+}
+
+header nav ul li a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+header nav ul li a:hover {
+    color: #509d87;
+}
+
+li.selected {
+    color: #509d87;
+    position: relative;
+}
+
+li.selected>span {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 20px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #509d87;
+    transition: .4s;
+}
+
+.telefone-hd {
+    float: left;
+    font-size: 20px;
+    color: white;
+    padding: 15px 0;
+    margin-left: 60px;
+    position: relative;
+    top: -4px;
+}
+
+
+/****/
+
+
+/** HEADER CONTENT **/
+
+.content-hd {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.content-hd .left-cnt {
+    width: 50%;
+    float: left;
+}
+
+.content-hd .left-cnt h2 {
+    color: #509d87;
+    font-weight: normal;
+    font-size: 34px;
+}
+
+.content-hd .left-cnt p,
+.content-hd .left-cnt span {
+    font-size: 14px;
+    padding: 20px 0;
+    color: rgb(50, 50, 50);
+}
+
+.content-hd .left-cnt form input {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content-hd .left-cnt form input[type=email] {
+    width: 270px;
+    height: 50px;
+    border: 2px solid #00Daaa;
+    border-radius: 25px;
+    display: inline-block;
+}
+
+.content-hd .left-cnt form input[type=email]:focus {
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.content-hd .left-cnt form input[type=submit] {
+    padding: 0 10px;
+    height: 50px;
+    border: 0;
+    border-radius: 25px;
+    font-size: 16px;
+    border: 2px solid #00Daaa;
+    background-color: #00Daaa;
+    color: white;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.content-hd .left-cnt form input[type=submit]:hover {
+    background-color: white;
+    color: #00Daaa;
+}
+
+.content-hd .left-cnt form input[type=submit]:focus {
+    outline: none;
+}
+
+.content-hd .left-cnt span {
+    display: block;
+    color: rgba(71, 83, 88, 0.6);
+}
+
+.content-hd .right-cnt {
+    float: left;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.content-hd .right-cnt img {
+    float: left;
+    width: 50%;
+    border: 10px solid rgba(0, 0, 0, 0);
+}
+
+.content-hd .right-cnt img:hover {
+    border: 4px solid rgba(0, 0, 0, 0);
+    transition: .4s;
+}
+
+
+/****/
+
+
+/** DIFERENCIAIS */
+
+section.diferenciais {
+    padding: 40px 0;
+}
+
+section.diferenciais>.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.diferenciais .diferencial-single {
+    width: 33.3%;
+    margin-bottom: 45px;
+    padding: 0 15px;
+}
+
+section.diferenciais .diferencial-single img {
+    max-width: 100%;
+}
+
+section.diferenciais .diferencial-single h2 {
+    font-size: 25px;
+    color: rgb(50, 50, 50);
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+section.diferenciais .diferencial-single h2>b {
+    color: #7dd5b0;
+}
+
+section.diferenciais .diferencial-single p {
+    color: rgb(50, 50, 50);
+    font-size: 14px;
+}
+
+
+/****/
+
+
+/** SOBRE */
+
+section.sobre {
+    padding: 30px 0 0 0;
+}
+
+section.sobre>.container {
+    max-width: 1366px;
+}
+
+section.sobre .sobre-cont {
+    float: left;
+    width: 50%;
+}
+
+section.sobre .sobre-cont img {
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+}
+
+section.sobre .sobre-cont h2 {
+    margin: 0px 0px 0px 20px;
+    font-size: 25px;
+    font-weight: normal;
+    max-width: 600px;
+    color: #a9c4b8;
+}
+
+section.sobre .sobre-cont h2>b {
+    color: #03ca9f;
+}
+
+section.sobre .sobre-cont p {
+    margin: 20px;
+    max-width: 600px;
+    font-size: 15px;
+    color: rgb(50, 50, 50);
+    position: relative;
+    z-index: 99;
+}
+
+
+/****/
+
+
+/** DEPOIMENTO */
+
+section.depoimento {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    background-image: url(../images/bg_02.png);
+    background-size: cover;
+    position: relative;
+    top: -70px;
+    z-index: 3;
+    text-align: center;
+    color: #2d2d2d;
+}
+
+section.depoimento h2 {
+    font-size: 29px;
+    font-weight: normal;
+}
+
+section.depoimento p {
+    font-size: 15px;
+}
+
+
+/****/
+
+
+/** ETAPAS **/
+
+section.etapas {
+    padding: 40px 0;
+}
+
+section.etapas>.container {
+    max-width: 1300px;
+}
+
+section.etapas h2 {
+    text-align: center;
+    color: #2d2d2d;
+    font-weight: normal;
+}
+
+section.etapas h2 b {
+    color: #a9c4b8;
+}
+
+section.etapas .etapas__single {
+    float: left;
+    width: 50%;
+    padding: 50px 10px;
+}
+
+section.etapas .etapas__group:nth-of-type(1) img {
+    width: 50%;
+}
+
+section.etapas .etapas__group img {
+    max-width: 100%;
+    float: left;
+}
+
+section.etapas .etapas__group p {
+    float: left;
+    padding-top: 90px;
+    padding-left: 5px;
+    color: #509d87;
+}
+
+section.etapas .etapas__group2 {
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+section.etapas .etapas__group2 .circle {
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+section.etapas .etapas__group2 .circle span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #03ca9f;
+    font-size: 40px;
+}
+
+section.etapas .etapas__group2 .etapas__descricao {
+    width: calc(100% - 100px);
+    padding: 0 20px;
+    float: left;
+}
+
+section.etapas .etapas__group2 .etapas__descricao h3 {
+    color: #03ca9f;
+    font-size: 18px;
+}
+
+section.etapas .etapas__group2 .etapas__descricao p {
+    color: #2d2d2d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.line {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(0, 100%);
+    height: 45px;
+    width: 1px;
+    background-color: #ccc;
+}
+
+
+/****/
+
+
+/** DIFERENÇAS **/
+
+section.diferencas>.container {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+section.diferencas>.container>h2 {
+    color: #414141;
+    font-weight: normal;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+
+.diferencas-single {
+    float: left;
+    width: 50%;
+    padding: 20px 0;
+}
+
+.diferencas-single:nth-of-type(1) {
+    border-right: 1px solid #ccc;
+}
+
+.diferencas-single h2 {
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 15px;
+    color: #a9c4b8;
+}
+
+.diferencas-single .item-diferencas-1 {
+    margin-top: 20px;
+}
+
+.diferencas-single .item-diferencas-1 span {
+    color: #a9c4b8;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.item-diferencas-1 {
+    margin-top: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.line-diferencas-1 {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: rotate(-2deg);
+    background-color: #e89595;
+    z-index: 999;
+}
+
+.diferencas-single .item-diferencas-2 {
+    margin-top: 20px;
+}
+
+.diferencas-single .item-diferencas-2 span {
+    color: #7dd5b0;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.diferencas-single .item-diferencas-2 span b {
+    color: #56a081;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+
+/****/
+
+
+/** CONTATO **/
+
+section.contato {
+    padding: 40px 0;
+    background-color: #98fcde;
+}
+
+section.contato>.container {
+    max-width: 800px;
+}
+
+section.contato h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #509d87;
+}
+
+section.contato p {
+    text-align: center;
+    color: #2d2d2d;
+}
+
+section.contato p b {
+    color: #3d3d3d;
+}
+
+section.contato .form-group {
+    margin: 10px 0;
+    text-align: center;
+}
+
+section.contato .form-group input {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-size: 16px;
+    border: 2px solid white;
+    transition: .4s;
+}
+
+section.contato .form-group input:focus {
+    border: 2px solid #00Daaa;
+    outline: none;
+}
+
+section.contato .form-group textarea {
+    border: 2px solid white;
+    resize: none;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+section.contato .form-group textarea:focus {
+    outline: none;
+}
+
+section.contato input[type=submit] {
+    width: 100%;
+    max-width: 100px;
+    padding: 0;
+    cursor: pointer;
+    background-color: #00Daaa;
+    border: 2px solid #00Daaa;
+    color: white;
+}
+
+section.contato input[type=submit]:hover {
+    border: 2px solid #00Daaa;
+    background-color: white;
+    color: #00Daaa;
+}
+
+
+/****/
+
+
+/** FOOTER **/
+
+footer {
+    width: 100%;
+    background-color: #509d87;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h2 {
+    color: #1f1f1f;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+}
+
+
+/****/
+
+
+/*************/
+
+@media screen and (max-width: 1151px) {
+    section.sobre .sobre-cont h2 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    section.etapas .etapas__single {
+        width: 100%;
+        padding: 50px 10px;
+    }
+    section.etapas>.container {
+        max-width: 700px;
+    }
+    section.etapas .etapas__group:nth-of-type(1) img {
+        max-width: 100%;
+        margin: 0 auto;
+        width: auto;
+    }
+    sectcion.etapas .etapas__group {
+        margin: 40px;
+    }
+    section.etapas .etapas__group img {
+        max-width: 100%;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    section.etapas .etapas__group p {
+        display: block;
+        float: none;
+        padding-top: 20px;
+        padding-left: 0px;
+        padding-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .content-hd .left-cnt form input {
+        display: inline-block;
+        margin-right: 10px;
+        margin: 5px 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    section.header-mst {
+        min-height: 400px;
+    }
+    nav.desktop {
+        display: none;
+    }
+    .telefone-hd {
+        display: none;
+    }
+    .content-hd .left-cnt {
+        text-align: center;
+        float: none;
+        width: 100%;
+        padding: 0 4%;
+    }
+    .content-hd .right-cnt {
+        display: none;
+    }
+    section.diferenciais .diferencial-single {
+        width: 100%;
+        text-align: center;
+        padding: 0 50px;
+    }
+    section.sobre .sobre-cont img {
+        top: 0;
+    }
+    section.sobre .sobre-cont {
+        width: 100%;
+        text-align: center;
+        top: 0;
+        float: none;
+    }
+    section.sobre .sobre-cont h2 {
+        max-width: 100%
+    }
+    section.sobre .sobre-cont p {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .diferencas-single {
+        float: none;
+        width: 100%;
+        padding: 20px 0;
+    }
+    .diferencas-single:nth-of-type(1) {
+        border-right: 0;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section.etapas .etapas__single .etapas__group2 {
+        display: none;
+    }
+}
